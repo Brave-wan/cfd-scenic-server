@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <view.MyTopBar
+        android:id="@+id/view_myTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tb_centerTv="服务协议"
+        app:tb_leftImClick="true"
+        app:tb_leftImVisibility="true"
+        app:tb_rightTvVisibility="false" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:text="曹妃甸智慧湿地游APP商家入驻合作协议" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="甲方：唐山曹妃甸湿地旅游开发有限公司"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="乙方： 入驻商家"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="为了更好地为商家服务以及保障消费者权益，甲乙双方本着甲、乙双方本着平等合作、互惠互利的原则，在符合相关法律法规，不违反市场竞争的情况下，甲方须遵循乙方的运营管理规范，经友好协商，甲乙双方签署以下入驻协议。"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="一、合作内容 "
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="1、乙方在甲方APP平台发布乙方商品的基本信息，甲方提供APP平台，供乙方发布其平台的信息。"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="2、本协议自乙方上线之日起生效。"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="二、甲方权利与义务"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="1、甲方为乙方提供APP平台的网络宣传。"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="2、甲方为乙方在消费群体中做相关宣传介绍并进行相关推广，以提升乙方的知名度。"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="3、如乙方提供商品出现任何食品安全事故，甲方有权随时告知解除本合同，并操作乙方商品下线，乙方因食品安全事故所带来的损失，甲方不负任何责任。 "
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="4、乙方一旦注册成功，成为本站的合法用户，将得到一个密码和用户名。您可随时根据指示改变您的密码。乙方将对用户名和密码安全负全部责任。另外，每个用户都要对以其用户名进行的所有活动和事件负全责。乙方若发现任何非法使用用户帐户或存在安全漏洞的情况，请立即通告甲方。"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="5、甲方不对用户所发布信息的删除或储存失败负责。甲方有判定用户的行为是否符合甲方服务条款的要求和精神的保留权利，如果用户违背了服务条款的规定，甲方有中断对其提供网络服务的权利。"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="6、如因不可抗力或其他无法控制的原因使甲方销售系统崩溃或无法正常使用导致网上交易无法完成或丢失有关的信息、记录等，甲方不承担责任。但是甲方会尽可能合理地协助处理善后事宜，并努力使客户免受经济损失。"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="三、乙方权利与义务"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="1、乙方应保证需提供有盖章的单位资质证明复印件，包括工商登记证明、税务登记证明、 卫生许可证及相关资质，因乙方资质问题贰使本协议无法正常履行的结果由乙方负责。"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text=" 2、乙方应遵循《中华人民共和国相关安全法》的相关条例并保证自身具备提供本合同项下商品及履行本合同项下乙方商品服务的必要的资质批文、管理制度及合格人员，保证送达甲方用户商品安全、及时、无污染。 "
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="3、凡甲方已经在乙方上线的商品及相应服务内容，在双方规定的上线时间内，未经乙 方同意甲方不得进行任何形式直接或间接的取消或变更，如因特殊原因甲方确实需要进行变更或取消的，由甲方至少提前5个工作日告知乙方，并由双方另行商议对页面做相 应的调整后方可进行变更。 "
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="4、乙方有义务提供合作期间在甲方APP平台营销活动和品牌形象展示所需要的所有文字、图片和视频等资料以甲方方创作，乙方保证对其提供的该等资料具有完全权利，并有 权授权给甲方基于本协议目的进行使用。"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="5、如甲方用户要求发票，由乙方负责提供。 "
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="6、甲方系统通知乙方下单后，如乙方因商品售罄原因，不能提供的，乙方应立即电话通知。 下单的消费者和甲方，并做好合理的安抚和处理。"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="7、甲方用户退订情形，甲方应在收到退订申请后告知乙方取消对应外卖订餐项目。乙方应 根据甲方通知做相应调整。 "
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="四、合作约定 "
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="1、双方的品牌归各自所有。"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="甲、乙双方均不可在对方未经授权的情况下使用对方名称、LOGO以及涉及相关内容的销售、促销宣传材料及广告、报纸、杂志、宣传单等。如因此产生的不良后果及损失由违约方自行全部承担。 "
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="2、任何双方违反本协议所规定的义务导致另一方受到包括但不限于投诉、举报、诉讼或处 罚、赔偿等损失，违约方在收到守约方要求纠正其违法行为的书面通知之日，应立即停 止其违约行为，并在10日内赔偿守约方因此受到的损失。"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="3、本协议任何一方均应对其获得对方的业务、经营、财务状况和其他保密资料予以严格保 密，不得以任何形式向任何第三方披露。如因任何一方未能履行保密义务而给其他方造 成任何损失的，应承担赔偿责任。 "
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="五、争议解决 "
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="本协议项下争议由双方友好协商解决，无法达成一致情形，任何一方有权将整体提交至 一方所在地有管辖权的人民法院诉讼解决。 "
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

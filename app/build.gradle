@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "com.cfd.business"
+        minSdkVersion 18
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+
+    }
+
+    signingConfigs {
+        debug {
+            keyAlias '123456'
+            keyPassword '123456'
+            storeFile file('./keystory/qy.jks')
+            storePassword '123456'
+        }
+
+        release {
+            keyAlias '123456'
+            keyPassword '123456'
+            storeFile file('./keystory/qy.jks')
+            storePassword '123456'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets.main.jniLibs.srcDirs = ['libs']
+    useLibrary 'org.apache.http.legacy'
+}
+
+/**
+ * Error:Execution failed for task ':app:javaPreCompileDebug'.
+ > Annotation processors must be explicitly declared now.  The following dependencies on the compile classpath are found to contain annotation processor.  Please add them to the annotationProcessor configuration.
+ - butterknife-7.0.1.jar (com.jakewharton:butterknife:7.0.1)
+ Alternatively, set android.defaultConfig.javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true to continue with previous behavior.  Note that this option is deprecated and will be removed in the future.
+ See https://developer.android.com/r/tools/annotation-processor-error-message.html for more details.
+ */
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile files('libs/org.apache.http.legacy.jar')
+    compile files('libs/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar')
+    compile files('libs/xUtils-2.6.14.jar')
+    compile files('libs/gson-2.3.1.jar')
+    compile project(':PhotoPicker')
+    compile files('libs/okhttp-3.2.0.jar')
+    compile files('libs/okhttputils-2_6_1.jar')
+    compile files('libs/okio-1.8.0.jar')
+    compile files('libs/badgeview.jar')
+    compile files('libs/jpush-android-2.2.0.jar')
+}
