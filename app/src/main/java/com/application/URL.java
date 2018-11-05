@@ -5,7 +5,7 @@ package com.application;
  */
 public class URL {
 
-    public  static  final String IP="https://www.cfdzhsd.com/cfdScenic/";
+    public  static  final String IP="http://111.62.21.42:8080/cfdScenic/";
     //public  static  final String IP="http://139.129.167.224/cfdScenic/";
     //public  static  final String IP="http://139.129.167.224:88/cfdScenic/";
     //public  static  final String IP="http://139.129.167.238:88/cfdScenic/";
