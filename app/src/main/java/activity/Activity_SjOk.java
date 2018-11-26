@@ -18,6 +18,7 @@ import java.util.logging.LogRecord;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import util.SpUtil;
+import util.StringUtil;
 
 /**
  * Created by Administrator on 2016/7/27 0027.
@@ -52,7 +53,7 @@ public class Activity_SjOk extends Activity {
     ImageView activitySjOkOrther2;
     AuthenticationJson authenticationJson;
 
-    private final Handler mHandler=new Handler() {
+    private final Handler mHandler = new Handler() {
         @Override
         public void close() {
 
@@ -69,40 +70,40 @@ public class Activity_SjOk extends Activity {
         }
 
 
-    } ;
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sj_ok);
         ButterKnife.bind(this);
-         authenticationJson = new Gson().fromJson(SpUtil.getString(Activity_SjOk.this, "authenticationJson", ""), AuthenticationJson.class);
+        authenticationJson = new Gson().fromJson(SpUtil.getString(Activity_SjOk.this, "authenticationJson", ""), AuthenticationJson.class);
         activitySjOkName.setText(authenticationJson.getName());
 
-        if(authenticationJson.getShopId().equals("1"))
+        if (authenticationJson.getShopId().equals("1"))
             tvStopType.setText("酒店");
-        else  if(authenticationJson.getShopId().equals("2"))
+        else if (authenticationJson.getShopId().equals("2"))
             tvStopType.setText("特产");
-        else  if(authenticationJson.getShopId().equals("3"))
+        else if (authenticationJson.getShopId().equals("3"))
             tvStopType.setText("饭店");
-        else  if(authenticationJson.getShopId().equals("4"))
+        else if (authenticationJson.getShopId().equals("4"))
             tvStopType.setText("小吃");
 
         activitySjOkProduct.setText(authenticationJson.getBusinessScope());
-
-        if(authenticationJson.getAccountType().equals("1"))
+        String account = authenticationJson.getAccountType();
+        if (!StringUtil.isEmpty(account) && account.equals("1"))
             tvAccountType.setText("个人");
-          else  tvAccountType.setText("对公");
+        else tvAccountType.setText("对公");
         activitySjOkRename.setText(authenticationJson.getRealName());
         activitySjOkBankcard.setText(authenticationJson.getBankCard());
         activitySjOkBankname.setText(authenticationJson.getAccountBank());
 
-        if(authenticationJson.getIsLicense().equals("1")){
+        if (authenticationJson.getIsLicense().equals("1")) {
             activitySjOkYingyezhizhaoll.setVisibility(View.VISIBLE);
-            ImageLoader.getInstance().displayImage(authenticationJson.getLicenseImg(),activitySjOkYingyezhizhaoiv);
+            ImageLoader.getInstance().displayImage(authenticationJson.getLicenseImg(), activitySjOkYingyezhizhaoiv);
 
-        }else activitySjOkYingyezhizhaoll.setVisibility(View.GONE);
-        ImageLoader.getInstance().displayImage(authenticationJson.getOtherImg1(),activitySjOkOrther1);
-        ImageLoader.getInstance().displayImage(authenticationJson.getOtherImg2(),activitySjOkOrther2);
+        } else activitySjOkYingyezhizhaoll.setVisibility(View.GONE);
+        ImageLoader.getInstance().displayImage(authenticationJson.getOtherImg1(), activitySjOkOrther1);
+        ImageLoader.getInstance().displayImage(authenticationJson.getOtherImg2(), activitySjOkOrther2);
     }
 }
